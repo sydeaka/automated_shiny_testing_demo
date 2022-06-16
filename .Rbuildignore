@@ -1,0 +1,14 @@
+^renv$
+^renv\.lock$
+^.*\.Rproj$
+^\.Rproj\.user$
+^data-raw$
+dev_history.R
+^dev$
+$run_dev.*
+^automated-testing-ice-cream\.Rcheck$
+^automated-testing-ice-cream.*\.tar\.gz$
+^automated-testing-ice-cream.*\.tgz$
+^automated.testing.ice.cream\.Rcheck$
+^automated.testing.ice.cream.*\.tar\.gz$
+^automated.testing.ice.cream.*\.tgz$

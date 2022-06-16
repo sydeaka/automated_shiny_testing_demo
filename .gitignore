@@ -1,0 +1,12 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+auto.test.shiny.app.Rcheck/
+auto.test.shiny.app*.tar.gz
+auto.test.shiny.app*.tgz
+automated-testing-ice-cream.Rcheck/
+automated-testing-ice-cream*.tar.gz
+automated-testing-ice-cream*.tgz
+auto.test.shiny.app-main/*
+renv/*
