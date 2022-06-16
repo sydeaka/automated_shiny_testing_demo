@@ -35,6 +35,7 @@ renv::install('devtools')
 renv::install('packrat')
 renv::install('rsconnect')
 renv::install("hadley/emo")
+renv::install('usethis')
 #renv::install('')
 #renv::install('')
 #renv::install('')
@@ -48,3 +49,10 @@ source('R/utils.R')
 create_dir('shinytest-logs')
 create_dir('tests')
 create_dir('inst/automated_testing')
+
+# Create .Renviron
+#usethis::edit_r_environ(scope = "project")
+
+# Set GitHub Personal Access Token (PAT)
+# Copy it to the clipboard and paste it when prompted
+gitcreds::gitcreds_set()
