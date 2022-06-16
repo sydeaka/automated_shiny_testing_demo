@@ -2,6 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+.Renviron
 auto.test.shiny.app.Rcheck/
 auto.test.shiny.app*.tar.gz
 auto.test.shiny.app*.tgz
