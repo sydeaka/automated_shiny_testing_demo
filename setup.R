@@ -36,13 +36,20 @@ renv::install('packrat')
 renv::install('rsconnect')
 renv::install("hadley/emo")
 renv::install('usethis')
-#renv::install('')
+renv::install('attachment')
+renv::install('covrpage')
+renv::install('rhub')
+renv::install('rmarkdown')
 #renv::install('')
 #renv::install('')
 #renv::install('')
 
+
+
 # Create a snapshot (update the lock file)
 renv::snapshot()
+
+shinytest::installDependencies()
 
 # Create directories for automated testing
 source('R/utils.R')

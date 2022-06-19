@@ -11,3 +11,6 @@ automated-testing-ice-cream*.tar.gz
 automated-testing-ice-cream*.tgz
 auto.test.shiny.app-main/*
 renv/*
+shinytest-logs/*
+tests/*
+.DS_Store

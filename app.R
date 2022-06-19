@@ -4,4 +4,4 @@
 
 pkgload::load_all(export_all = FALSE,helpers = FALSE,attach_testthat = FALSE)
 options( "golem.app.prod" = TRUE)
-auto.test.shiny.app::run_app() # add parameters here (if any)
+automated.testing.ice.cream::run_app() # add parameters here (if any)
