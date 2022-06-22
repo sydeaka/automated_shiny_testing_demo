@@ -22,6 +22,8 @@ golem::add_rstudioconnect_file()
 # Install packages
 renv::install('shiny')
 renv::install('shinytest')
+renv::install('shinytest2')
+renv::install('shinyvalidate')
 renv::install('dplyr')
 renv::install('shinydashboard')
 renv::install('shinydashboardPlus')
@@ -50,6 +52,10 @@ renv::install('rmarkdown')
 renv::snapshot()
 
 shinytest::installDependencies()
+
+
+usethis::use_package('shinytest')
+usethis::use_package('shinytest2')
 
 # Create directories for automated testing
 source('R/utils.R')
