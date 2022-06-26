@@ -19,6 +19,34 @@ golem::create_golem(path=project_path,
 golem::set_golem_name(package_name)
 golem::add_rstudioconnect_file()
 
+list_packages <- c(
+  'shiny', 
+  'shinytest', 
+  'shinytest2', 
+  'shinyvalidate', 
+  'dplyr', 
+  'shinydashboard', 
+  'shinydashboardPlus', 
+  'fresh', 
+  'ggplot2', 
+  'plotly', 
+  'logger', 
+  'rvest', 
+  'here', 
+  'devtools', 
+  'packrat', 
+  'rsconnect', 
+  "emo", # "hadley/emo", 
+  'usethis', 
+  'attachment', 
+  #'covrpage', 
+  'rhub', 
+  'rmarkdown', 
+  'RSelenium'#, 
+  #'wdman' 
+)
+
+
 # Install packages
 renv::install('shiny')
 renv::install('shinytest')
@@ -42,10 +70,11 @@ renv::install('attachment')
 renv::install('covrpage')
 renv::install('rhub')
 renv::install('rmarkdown')
+renv::install('RSelenium')
+renv::install('wdman')
+#renv::install('rsconnect')
 #renv::install('')
 #renv::install('')
-#renv::install('')
-
 
 
 # Create a snapshot (update the lock file)
@@ -54,8 +83,9 @@ renv::snapshot()
 shinytest::installDependencies()
 
 
-usethis::use_package('shinytest')
-usethis::use_package('shinytest2')
+for (pkg in list_packages) {
+  usethis::use_package(pkg)
+}
 
 # Create directories for automated testing
 source('R/utils.R')
@@ -69,3 +99,5 @@ create_dir('inst/automated_testing')
 # Set GitHub Personal Access Token (PAT)
 # Copy it to the clipboard and paste it when prompted
 gitcreds::gitcreds_set()
+
+
