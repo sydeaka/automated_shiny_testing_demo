@@ -15,3 +15,5 @@ tests/testthat/_snaps/*
 tests/ice-cream-app-test-demo-current/*
 shinytest-logs/*
 .DS_Store
+trash/*
+*.dcf
