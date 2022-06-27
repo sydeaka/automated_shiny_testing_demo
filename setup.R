@@ -76,11 +76,12 @@ renv::install('wdman')
 #renv::install('')
 #renv::install('')
 
+shinytest::installDependencies()
 
 # Create a snapshot (update the lock file)
 renv::snapshot()
 
-shinytest::installDependencies()
+
 
 
 for (pkg in list_packages) {
