@@ -2,13 +2,13 @@
 
 The code shared in this repository demonstrates the automated Shiny testing workflow discussed at the 2022 RStudio Conference on Thursday July 28, 2022 at 3:40 PM EDT. 
 
-Speaker: Sydeaka Watson, https://www.linkedin.com/in/sydeakawatson/
+<u>**Speaker**</u>: Sydeaka Watson, https://www.linkedin.com/in/sydeakawatson/
 
-Title: "A Robust Framework for Automated Shiny App Testing"
+<u>**Title**</u>: "A Robust Framework for Automated Shiny App Testing"
 
-Session Details: https://sched.co/11ibQ
+<u>**Session Details**</u>: https://sched.co/11ibQ
 
-Abstract: 
+<u>**Abstract**</u>: 
 
 For production-grade Shiny applications, regression testing ensures that the application maintains its core functionality as new features are added to the app. With the help of various R and Python tools that programmatically interact with the UI and examine UI outputs, regression test logic can be represented programmatically and can run as often as needed. This gives the development team an opportunity to catch and fix bugs before they are pushed to production.
 
@@ -16,25 +16,25 @@ In this talk, I will introduce a framework for automated testing of Shiny applic
 
 # Prerequisites
 
-* Install the RStudio IDE.
+* Install the RStudio IDE
   * https://www.rstudio.com/products/rstudio/download/
-* Install R. 
+* Install R
   * NOTE: I used R version 4.2.0, but it may still work with an earlier version.
   * https://cran.r-project.org/
-* Install Docker. 
+* Install Docker
   * NOTE: Docker is free for open-source, non-commercial projects. Other uses may require a subscription. See Docker website for more information.
   * https://docs.docker.com/get-docker/
 
 # Setup
 
-Run the `setup.R` script from within the RStudio IDE.
+In the RStudio IDE, run the `setup.R` script located in the project's root folder.
 
 
 # Demo
 
 ## Running the Shiny app
 
-First, I recommend that you run the Shiny app locally to ensure that all packages and dependencies were installed correctly.
+Before running the tests, I recommend that you run the Shiny app locally to ensure that all packages and dependencies were installed correctly.
 
 To run the app, open the `app.R` file in the project's root directory in the RStudio IDE. In the upper right corner, click the Run App button. 
 
@@ -70,8 +70,6 @@ If you use this method, you would have to run the tests separately for all test 
 ### Option 2: Command line
 
 In the R Console, run the following command: `shinytest2::test_app()`. This will automatically run all R scripts in the  `.../tests/testthat` folder whose names include the `test-` prefix, so there is no need to run the tests separately as in the previous option.
-
-### `shinytest2` results
 
 Results will be displayed in the R console.
 
