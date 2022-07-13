@@ -18,3 +18,4 @@ selenium-logs/*
 .DS_Store
 trash/*
 *.dcf
+selenium/test-results/*
