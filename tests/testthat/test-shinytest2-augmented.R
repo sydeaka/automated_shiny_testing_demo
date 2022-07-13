@@ -89,6 +89,6 @@ test_that("{shinytest2} augmented test: `automated_shiny_testing_demo`", {
   
   app$expect_screenshot()
   app$expect_values()
-  app$get_logs() %>% print
+  #app$get_logs() %>% print
   
 })
