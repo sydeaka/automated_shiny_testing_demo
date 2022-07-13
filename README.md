@@ -27,8 +27,8 @@ In this talk, I will introduce a framework for automated testing of Shiny applic
 
 # Setup
 
-* Run the `setup.R` script from within RStudio
-* Open the Docker application
+Run the `setup.R` script from within the RStudio IDE.
+
 
 # Demo
 
@@ -71,6 +71,8 @@ If you use this method, you would have to run the tests separately for all test 
 
 In the R Console, run the following command: `shinytest2::test_app()`. This will automatically run all R scripts in the  `.../tests/testthat` folder whose names include the `test-` prefix, so there is no need to run the tests separately as in the previous option.
 
+### `shinytest2` results
+
 Results will be displayed in the R console.
 
 ![Shinytest2 Run Tests Console -- Results](images/shinytest2-results-console.png)
@@ -78,6 +80,15 @@ Results will be displayed in the R console.
 
 ## Running the `Selenium` demo
 
+Open the Docker application.
+
+Run the `selenium/test-selenium.R` script. You can use the approach described in option #1 in the `shinytest2` section above to run the script.
+
+![Selenium Run Tests Button](images/selenium-run-tests.png)
 
 
+
+Results will be displayed in the Build Pane.
+
+![Selenium Run Tests Button -- Results](images/selenium-results-build-pane.png)
 
