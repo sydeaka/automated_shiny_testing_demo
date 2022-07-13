@@ -46,8 +46,38 @@ A window should pop up. In this window, you should see the front page of the dem
 
 ## Deploying the Shiny app
 
+The following link contains instructions for deploying your Shiny app. The first option explains how you can host your Shiny app on the free 
+Shinyapps.io service. Usage is limited to 25 hours per month, but this should be plenty for demo purposes. To cut down on usage, I recommend that you put your application to sleep when you aren't running the demo.
+
+Link: https://shiny.rstudio.com/deploy/
+
 ## Running the `shinytest2` demo
 
+The `shinytest2` test files are located in the `.../tests/testthat` folder. They are R files with names that include the `test-` prefix. There are 2 options for running the test.
+
+### Option 1: Button Click in the User Interface
+
+Open one of the test R scripts in the RStudio IDE. In the upper right corner, click the "Run Tests" Button.
+
+![Shinytest2 Run Tests Button](images/shinytest2-run-tests-button.png)
+
+Results will be displayed in the Build Pane.
+
+![Shinytest2 Run Tests Button -- Results](images/shinytest2-results-build-pane.png)
+
+If you use this method, you would have to run the tests separately for all test scripts.
+
+### Option 2: Command line
+
+In the R Console, run the following command: `shinytest2::test_app()`. This will automatically run all R scripts in the  `.../tests/testthat` folder whose names include the `test-` prefix, so there is no need to run the tests separately as in the previous option.
+
+Results will be displayed in the R console.
+
+![Shinytest2 Run Tests Console -- Results](images/shinytest2-results-console.png)
+
+
 ## Running the `Selenium` demo
+
+
 
 
