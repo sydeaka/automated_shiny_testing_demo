@@ -16,11 +16,13 @@ In this talk, I will introduce a framework for automated testing of Shiny applic
 
 # Prerequisites
 
-* Install RStudio
+* Install the RStudio IDE.
   * https://www.rstudio.com/products/rstudio/download/
-* Install R. I used R version 4.2.0, but it may still work with an earlier version.
+* Install R. 
+  * NOTE: I used R version 4.2.0, but it may still work with an earlier version.
   * https://cran.r-project.org/
-* Install Docker. NOTE: Docker is free for open-source, non-commercial projects. All other uses will require a subscriptions. See their website for more information.
+* Install Docker. 
+  * NOTE: Docker is free for open-source, non-commercial projects. Other uses may require a subscription. See Docker website for more information.
   * https://docs.docker.com/get-docker/
 
 # Setup
@@ -36,11 +38,11 @@ First, I recommend that you run the Shiny app locally to ensure that all package
 
 To run the app, open the `app.R` file in the project's root directory in the RStudio IDE. In the upper right corner, click the Run App button. 
 
-![Run Button for Ice Cream App](images/shiny-app-run-button.png?raw=true "Run Button for Ice Cream App")
+![Run Button for Ice Cream App](images/shiny-app-run-button.png)
 
 A window should pop up. In this window, you should see the front page of the demo Ice Cream App.
 
-![Screenshot of Ice Cream App](images/shiny-app-screenshot.png?raw=true "Screenshot of Ice Cream App")
+![Screenshot of Ice Cream App](images/shiny-app-screenshot.png)
 
 ## Deploying the Shiny app
 
